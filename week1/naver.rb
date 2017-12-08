@@ -1,7 +1,7 @@
 require 'httparty'
 require 'nokogiri'
 
-
+#필요한 주소 url에 저장
 url = "http://finance.naver.com/sise/"
 #url 요청
 response = HTTParty.get(url)
