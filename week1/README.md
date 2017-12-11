@@ -46,7 +46,7 @@
 require 'httparty'
 require 'nokogiri'
 
-
+#필요한 주소 url에 저장 
 url = "http://finance.naver.com/sise/"
 #url 요청
 response = HTTParty.get(url)
@@ -60,4 +60,10 @@ kospi = doc.css("#KOSPI_now")
 #kospi에 저장된 것중 태그 안에 있는 텍스트를 출력
 puts kospi.text
 ```
+
+[마크다운 사용법 링크](https://gist.github.com/ihoneymon/652be052a0727ad59601)
+
+
+
+
 
