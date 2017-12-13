@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <title>게시판</title>
+    <style>
+      input, textarea {margin-top:10px;}
+    </style>
   </head>
   <body>
+    <h2>글쓰기</h2>
     <form action="/complete">
-      <input type="text" name="title" value="제목" />
+      <input type="text" name="title" placeholder="제목" />
       <br />
-      <textarea name="write">아무말이나 쓰세요.</textarea>
+      <textarea name="write" placeholder="아무말이나 쓰세요."></textarea>
       <br />
-      <input type="submit" value="글쓰기" />
+      <input type="submit" value="완료" />
     </form>
   </body>
 </html>
